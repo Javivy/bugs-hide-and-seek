@@ -7,7 +7,7 @@ const closeMenuBtn = document.querySelector('.close-menu-btn');
 const mobileMenu = document.querySelector('.visible');
 const mobileNav = document.querySelector('.mobile-ul');
 const projectsContainer = document.querySelector('.projects');
-const menuBtns = document.querySelectorAll('.menu-btn');
+const menuBtns = document.querySelectorAll('menu-btn');
 
 const projectData = [
   {
@@ -88,13 +88,13 @@ function createProject(index) {
   projectSample.classList.add('project-sample');
   projectDetails.classList.add('details');
   projectUl.classList.add('tech-used');
-  seeProjectBtn.classList.add('green-btn', 'popup-open-btn');
+  seeProjectBtn.classList.add('green-btn', 'popup-openbtn');
 
   projectName.textContent = name;
   seeProjectBtn.textContent = 'See Project';
 
   seeProjectBtn.type = 'button';
-  seeProjectBtn.id = `project-${index}`;
+  seeProjectBtn.id = 'project-${index}';
 
   for (let i = 0; i < technologies.length; i++) {
     const projectLi = document.createElement('li');
